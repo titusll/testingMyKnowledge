@@ -27,5 +27,7 @@ export default class CaseListFilter extends LightningElement {
       this.dataList = caseResults;
 
       console.log('nothing');
+
+      console.log('new changes');
     }
 }
