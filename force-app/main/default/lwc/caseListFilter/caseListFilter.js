@@ -25,5 +25,7 @@ export default class CaseListFilter extends LightningElement {
     async showCases(){
       const caseResults = await returnFilteredCases({prioritySelect: this.priorityChosen});
       this.dataList = caseResults;
+
+      console.log('nothing');
     }
 }
