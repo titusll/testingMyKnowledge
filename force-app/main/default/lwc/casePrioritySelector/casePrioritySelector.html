@@ -1,0 +1,16 @@
+<template>
+    <lightning-card>
+        <h1>Select a Case Priority</h1>
+        <lightning-combobox 
+           name="priorityCombobox"
+           label="Status"
+           value={priorityChosen}
+        options={options}
+        onchange={onstatusChange}
+        >
+        </lightning-combobox>
+        <template if:true={priorityChosen}>
+           <c-case-list-filter priority-chosen={priorityChosen}></c-case-list-filter>
+        </template>
+    </lightning-card>
+</template>
